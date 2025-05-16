@@ -213,4 +213,10 @@ body {
   .user-profile img {
     margin-right: 0;
   }
+
+  .nav-menu li a,
+  .install-app a,
+  .user-profile {
+    justify-content: center;
+  }
 }
