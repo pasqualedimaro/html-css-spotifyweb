@@ -179,3 +179,38 @@ body {
   font-weight: bold;
   font-size: 14px;
 }
+
+@media screen and (max-width: 575px) {
+  .sidebar {
+    width: 50px;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 30px;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    width: 30px;
+  }
+
+  .nav-menu li a span,
+  .playlist-section,
+  .install-app a span,
+  .user-profile span {
+    display: none;
+  }
+
+  .icon {
+    margin-right: 0;
+  }
+
+  .user-profile img {
+    margin-right: 0;
+  }
+}
