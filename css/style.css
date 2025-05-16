@@ -180,6 +180,85 @@ body {
   font-size: 14px;
 }
 
+/*MAIN*/
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.top-bar {
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-nav {
+  padding: 20px;
+}
+
+.upgrade-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.upgrade-button button {
+  background: none;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  color: var(--white);
+  padding: 10px 30px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.upgrade-button button:hover {
+  transform: scale(1.05);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-nav li {
+  margin: 0 10px;
+  position: relative;
+}
+
+.main-nav li a {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.main-nav li.active a {
+  color: var(--white);
+}
+
+.main-nav li.active::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--highlight);
+  margin: 3px auto 0;
+}
+
+.main-nav li a:hover {
+  color: var(--white);
+}
+
+/*MEDIA QUERIES*/
 @media screen and (max-width: 575px) {
   .sidebar {
     width: 50px;
