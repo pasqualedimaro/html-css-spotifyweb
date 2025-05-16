@@ -72,6 +72,19 @@ body {
   color: var(--white);
 }
 
+.nav-menu li.active {
+  position: relative;
+}
+
+.nav-menu li.active::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  height: 100%;
+  width: 3px;
+  background-color: var(--highlight);
+}
+
 .icon {
   width: 20px;
   height: 20px;
@@ -241,10 +254,6 @@ body {
   font-weight: bold;
 }
 
-.main-nav li.active a {
-  color: var(--white);
-}
-
 .main-nav li.active::after {
   content: "";
   display: block;
@@ -297,5 +306,9 @@ body {
   .install-app a,
   .user-profile {
     justify-content: center;
+  }
+
+  .nav-menu li.active::before {
+    display: none;
   }
 }
