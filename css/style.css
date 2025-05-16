@@ -1,0 +1,170 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*COLORI CSS*/
+:root {
+  --primary-dark: #000000;
+  --secondary-dark: #141922;
+  --light-gray: #717171;
+  --player-dark: #282828;
+  --highlight: #adff2f;
+  --white: #ffffff;
+}
+
+body {
+  color: var(--white);
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*PRIMARY CONTAINER*/
+.container {
+  display: flex;
+  height: calc(100vh - 90px);
+  background-color: var(--secondary-dark);
+}
+
+/*SIDEBAR*/
+.sidebar {
+  width: 230px;
+  background-color: var(--primary-dark);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo img {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+.logo-desktop {
+  display: block;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.nav-menu {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.nav-menu li {
+  padding: 5px 0;
+}
+
+.nav-menu li a {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li.active a {
+  color: var(--white);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: opacity(0.7);
+}
+
+.nav-menu li.active .icon,
+.nav-menu li a:hover .icon {
+  filter: brightness(1);
+}
+
+.playlist-section {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.playlist-section h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.create-playlist {
+  background: none;
+  border: none;
+  color: var(--light-gray);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.playlist-icon {
+  font-size: 30px;
+  color: var(--light-gray);
+  margin-right: 10px;
+}
+
+.icon-plus {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  background-color: var(--light-gray);
+  margin-right: 10px;
+}
+
+.playlist-list {
+  list-style: none;
+}
+
+.playlist-list li {
+  padding: 5px 0;
+}
+
+.playlist-list li a {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.user-section {
+  margin-top: auto;
+}
+
+.install-app {
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.install-app a {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 10px;
+}
+
+.user-profile span {
+  font-weight: bold;
+  font-size: 14px;
+}
