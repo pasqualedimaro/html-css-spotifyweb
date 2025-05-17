@@ -367,6 +367,8 @@ body {
 }
 
 /*MEDIA QUERIES*/
+
+/*MOBILE*/
 @media screen and (max-width: 575px) {
   .sidebar {
     width: 50px;
