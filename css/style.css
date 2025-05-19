@@ -525,6 +525,10 @@ body {
   font-size: 30px !important;
 }
 
+.player-icon:hover {
+  filter: brightness(1);
+}
+
 /*MEDIA QUERIES*/
 
 /*MOBILE*/
