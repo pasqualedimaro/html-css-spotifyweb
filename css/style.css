@@ -316,6 +316,10 @@ body {
   border-radius: 50%;
 }
 
+.artist-img::before {
+  border-radius: 50%;
+}
+
 .album-img::before {
   content: "";
   position: absolute;
