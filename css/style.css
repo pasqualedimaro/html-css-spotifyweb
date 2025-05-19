@@ -370,6 +370,161 @@ body {
   transform: translate(-50%, -50%) scale(1);
 }
 
+/*FOOTER*/
+
+.player-bar {
+  height: 90px;
+  background-color: var(--player-dark);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.now-playing {
+  width: 230px;
+  display: flex;
+  align-items: center;
+}
+
+.now-playing img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.song-info {
+  flex-grow: 1;
+}
+
+.song-info h4 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.song-info p {
+  color: var(--light-gray);
+  font-size: 12px;
+}
+
+.song-actions {
+  display: flex;
+  align-items: center;
+}
+
+.player-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  filter: opacity(0.7);
+}
+
+.play-large {
+  width: 30px;
+  height: 30px;
+}
+
+.player-controls {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.control-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.current-time,
+.total-time {
+  font-size: 12px;
+  width: 35px;
+}
+
+.progress-container {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #5a5a5a;
+  margin: 0 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-current {
+  height: 100%;
+  width: 20%;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-container:hover .progress-current {
+  background-color: var(--highlight);
+}
+
+.volume-controls {
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.volume-bar {
+  width: 100px;
+  height: 4px;
+  background-color: #5a5a5a;
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.volume-current {
+  height: 100%;
+  width: 50%;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.volume-bar:hover .volume-current {
+  background-color: var(--highlight);
+}
+
+.player-icon.fa,
+.player-icon.fas,
+.player-icon.far {
+  color: var(--light-gray);
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.player-icon.fa:hover,
+.player-icon.fas:hover,
+.player-icon.far:hover {
+  color: var(--white);
+}
+
+.play-large {
+  font-size: 30px !important;
+}
+
 /*MEDIA QUERIES*/
 
 /*MOBILE*/
